@@ -1,0 +1,252 @@
+body {
+	position: relative;
+	z-index: 0;
+	margin: 0;
+	padding: 0 0 1em 0;
+	background-repeat: no-repeat;
+	background-size: cover;
+	background-attachment: fixed;
+	background-position: center top;
+}
+
+.head-decor {
+	display: none
+}
+
+.page_newyear .head-decor {
+	position: absolute;
+	top: 0;
+	left: 0;
+	display: block;
+	height: 119px;
+	width: 700px;
+	overflow: visible;
+	background: url(images/branch.png) repeat-x 0 0;
+	background-size: 100%;
+}
+
+.page_newyear .head-decor__inner {
+	position: absolute;
+	top: 0;
+	left: 0;
+	height: 115px;
+	display: block;
+	width: 100%;
+}
+
+.page_newyear .head-decor::before {
+	content: '';
+	display: block;
+	position: absolute;
+	top: -115px;
+	left: 0;
+	z-index: 3;
+	height: 115px;
+	display: block;
+	width: 100%;
+}
+
+.ball {
+	position: absolute
+}
+
+.ball_s .ball__i {
+	background: url(images/ball1.png) 0 0 / 100% no-repeat;
+}
+
+.ball_m .ball__i {
+	background: url(images/ball1.png) 0 0 / 100% no-repeat;
+}
+
+.ball_l .ball__i {
+	background: url(images/ball1.png) 0 0 / 100% no-repeat;
+}
+
+.crystall_s .ball__i {
+	background: url(images/ball2.png) 0 0 / 100% no-repeat;
+}
+
+.crystall_m .ball__i {
+	background: url(images/ball2.png) 0 0 / 100% no-repeat;
+}
+
+.crystall_l .ball__i {
+	background: url(images/ball2.png) 0 0 / 100% no-repeat;
+}
+
+.ball_s {
+	top: -6px;
+	width: 34px;
+	height: 90px;
+}
+
+.ball_m {
+	top: -45px;
+	width: 43px;
+	height: 110px;
+}
+
+.ball_l {
+	top: 0px;
+	width: 60px;
+	height: 153px;
+}
+
+.crystall_s {
+	top: -30px;
+	width: 20px;
+	height: 117px;
+}
+
+.crystall_m {
+	top: -19PX;
+	width: 25px;
+	height: 135px;
+}
+
+.crystall_l {
+	top: -3px;
+	width: 35px;
+	height: 200px;
+}
+
+.ball_n1 {
+	left: 70px;
+}
+
+.ball_n2 {
+	left: 133px;
+}
+
+.ball_n3 {
+	left: 167px;
+}
+
+.ball_n4 {
+	left: 223px;
+}
+
+.ball_n5 {
+	left: 250px;
+}
+
+.ball_n6 {
+	left: 282px;
+}
+
+.ball_n7 {
+	left: 318px;
+}
+
+.ball_n8 {
+	left: 384px;
+}
+
+.ball_n9 {
+	left: 415px;
+}
+
+.ball_n10 {
+	left: 462px;
+}
+
+.ball_n11 {
+	left: 487px;
+}
+
+.ball_n12 {
+	left: 558px;
+}
+
+.ball_n13 {
+	right: 62px;
+}
+
+.ball__i {
+	position: absolute;
+	width: 100%;
+	height: 100%;
+	-webkit-transform-origin: 50% 0;
+	-moz-transform-origin: 50% 0;
+	-o-transform-origin: 50% 0;
+	transform-origin: 50% 0;
+	-webkit-transition: all .3s ease-in-out;
+	-moz-transition: all .3s ease-in-out;
+	-o-transition: all .3s ease-in-out;
+	transition: all .3s ease-in-out;
+	pointer-events: none;
+}
+
+.ball_bounce .ball__right {
+	position: absolute;
+	top: 0;
+	right: 0;
+	left: 50%;
+	bottom: 0;
+	z-index: 9
+}
+
+.ball_bounce:hover .ball__right {
+	display: none
+}
+
+.ball_bounce .ball__right:hover {
+	left: 0;
+	display: block !important
+}
+
+.ball_bounce.bounce>.ball__i {
+	-webkit-transform: rotate(-9deg);
+	-moz-transform: rotate(-9deg);
+	-o-transform: rotate(-9deg);
+	transform: rotate(-9deg)
+}
+
+.ball_bounce .ball__right.bounce+.ball__i {
+	-webkit-transform: rotate(9deg);
+	-moz-transform: rotate(9deg);
+	-o-transform: rotate(9deg);
+	transform: rotate(9deg)
+}
+
+.ball_bounce.bounce1>.ball__i {
+	-webkit-transform: rotate(6deg);
+	-moz-transform: rotate(6deg);
+	-o-transform: rotate(6deg);
+	transform: rotate(6deg)
+}
+
+.ball_bounce .ball__right.bounce1+.ball__i {
+	-webkit-transform: rotate(-6deg);
+	-moz-transform: rotate(-6deg);
+	-o-transform: rotate(-6deg);
+	transform: rotate(-6deg)
+}
+
+.ball_bounce.bounce2>.ball__i {
+	-webkit-transform: rotate(-3deg);
+	-moz-transform: rotate(-3deg);
+	-o-transform: rotate(-3deg);
+	transform: rotate(-3deg)
+}
+
+.ball_bounce .ball__right.bounce2+.ball__i {
+	-webkit-transform: rotate(3deg);
+	-moz-transform: rotate(3deg);
+	-o-transform: rotate(3deg);
+	transform: rotate(3deg)
+}
+
+.ball_bounce.bounce3>.ball__i {
+	-webkit-transform: rotate(1.5deg);
+	-moz-transform: rotate(1.5deg);
+	-o-transform: rotate(1.5deg);
+	transform: rotate(1.5deg)
+}
+
+.ball_bounce .ball__right.bounce3+.ball__i {
+	-webkit-transform: rotate(-1.5deg);
+	-moz-transform: rotate(-1.5deg);
+	-o-transform: rotate(-1.5deg);
+	transform: rotate(-1.5deg)
+}
